@@ -17,17 +17,19 @@ exclude = [
 maintenance = { status = "passively-maintained" }
 
 [dependencies]
-image = { git = "https://github.com/mesalock-linux/image-sgx" }
+image = { version = "0.24", default-features = false, optional = true }
+image_sgx = { git = "https://github.com/mesalock-linux/image-sgx", package = "image", optional = true }
 sgx_tstd = { git = "https://github.com/apache/teaclave-sgx-sdk.git", optional = true }
 
 [dev-dependencies]
-image = { git = "https://github.com/mesalock-linux/image-sgx" }
+image = { version = "0.24" }
+image_sgx = { git = "https://github.com/mesalock-linux/image-sgx", package = "image"  }
 
 [features]
-default = ["svg", "enclave"]
+default = ["svg", "image"]
 bench = []
 svg = []
-enclave = ["sgx_tstd"]
+enclave = ["sgx_tstd", "image_sgx", "svg" ]
 
 [[bin]]
 name = "qrencode"
