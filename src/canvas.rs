@@ -13,6 +13,7 @@ use std::cmp::max;
 
 use crate::cast::As;
 use crate::types::{Color, EcLevel, Version};
+use std::prelude::v1::*;
 
 //------------------------------------------------------------------------------
 //{{{ Modules

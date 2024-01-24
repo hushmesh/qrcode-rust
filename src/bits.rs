@@ -8,6 +8,7 @@ extern crate test;
 use crate::cast::{As, Truncate};
 use crate::optimize::{total_encoded_len, Optimizer, Parser, Segment};
 use crate::types::{EcLevel, Mode, QrError, QrResult, Version};
+use std::prelude::v1::*;
 
 //------------------------------------------------------------------------------
 //{{{ Bits

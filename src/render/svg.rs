@@ -14,6 +14,7 @@
 
 use std::fmt::Write;
 use std::marker::PhantomData;
+use std::prelude::v1::*;
 
 use crate::render::{Canvas as RenderCanvas, Pixel};
 use crate::types::Color as ModuleColor;

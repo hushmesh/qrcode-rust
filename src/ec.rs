@@ -3,6 +3,7 @@
 use std::ops::Deref;
 
 use crate::types::{EcLevel, QrResult, Version};
+use std::prelude::v1::*;
 
 //------------------------------------------------------------------------------
 //{{{ Error correction primitive

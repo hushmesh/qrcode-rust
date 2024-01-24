@@ -3,6 +3,7 @@
 use crate::cast::As;
 use crate::render::{Canvas as RenderCanvas, Pixel};
 use crate::types::Color;
+use std::prelude::v1::*;
 
 pub trait Element: Copy {
     fn default_color(color: Color) -> Self;

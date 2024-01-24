@@ -34,7 +34,15 @@
 #![cfg_attr(feature = "bench", doc = include_str!("../README.md"))]
 // ^ make sure we can test our README.md.
 
+#![cfg_attr(feature = "enclave", no_std)]
+#[cfg(feature = "enclave")]
+extern crate alloc;
+#[cfg(feature = "enclave")]
+#[macro_use]
+extern crate sgx_tstd as std;
+
 use std::ops::Index;
+use std::prelude::v1::*;
 
 pub mod bits;
 pub mod canvas;

@@ -1,6 +1,7 @@
 //! UTF-8 rendering, with 2 pixels per symbol.
 
 use crate::render::{Canvas as RenderCanvas, Color, Pixel};
+use std::prelude::v1::*;
 
 const CODEPAGE: [&str; 4] = [" ", "\u{2584}", "\u{2580}", "\u{2588}"];
 

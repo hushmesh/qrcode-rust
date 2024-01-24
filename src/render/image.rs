@@ -2,6 +2,7 @@
 
 use crate::render::{Canvas, Pixel};
 use crate::types::Color;
+use std::prelude::v1::*;
 
 use image::{ImageBuffer, Luma, LumaA, Primitive, Rgb, Rgba};
 
